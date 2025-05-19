@@ -10,7 +10,7 @@ form.addEventListener(`submit`, e => {
         password: e.target.elements.password.value.trim(),
     }
 
-    if (!userData.email === "" || userData.password === "") {
+    if (userData.email === "" || userData.password === "") {
         alert(`All form fields must be filled in`);
         return;
     }
